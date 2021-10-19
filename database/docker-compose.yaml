@@ -1,0 +1,10 @@
+version: "0.1"
+services:
+  postgres:
+    image: "postgres"
+    ports:
+      - "5432:5432"
+    enviroment:
+      POSTGRES_PASSWORD: admin
+  pgadmin:
+    image: "redis:alpine"
